@@ -4,7 +4,7 @@
 #
 # Thomas Vogt, thomas@thomas-vogt.de
 
-cmake_minimum_required( VERSION 3.24 )
+cmake_minimum_required( VERSION 3.22 )
 
 project( arm_cortex_m0 LANGUAGES ASM C )
 
