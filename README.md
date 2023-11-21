@@ -6,8 +6,8 @@ DHWB Ravensburg.
 ## Arm Documentation
  - [Cortex M0 Startseite](https://developer.arm.com/Processors/Cortex-M0)
    - [ARMv7-M Architecture Reference Manual](https://developer.arm.com/documentation/ddi0403/latest/)
-   - [Cortex-M4 Devices Generic User Guide](https://developer.arm.com/documentation/dui0553/b/?lang=en)
-   - [Arm Cortex-M4 Processor Technical Reference Manual Revision r0p1](https://developer.arm.com/documentation/100166/0001/?lang=en)
+   - [Cortex-M0 Devices Generic User Guide](https://developer.arm.com/documentation/dui0497/a/?lang=en)
+   - [Cortex-M0 Technical Reference Manual r0p0](https://developer.arm.com/documentation/ddi0432/c/?lang=en)
  - [Arm Application Binary Interface](https://github.com/ARM-software/abi-aa)
  - [GNU Assembler Documentation](https://sourceware.org/binutils/docs-2.40/as/index.html)
  - [GNU Linker Documentation](https://sourceware.org/binutils/docs-2.40/ld/index.html)
@@ -16,6 +16,7 @@ DHWB Ravensburg.
  - CMake
  - Arm GCC Cross-Compiler
  - QEMU
+ - GDB (Multi-Arch)
 
 ### Windows
 Installation von CMake über Download des Installers (https://cmake.org/download/)
@@ -41,19 +42,17 @@ sudo pacman -S cmake
 
 ## Building
 Auschecken des Quellcodes:
-`git clone https://github.com/infohoschie/Arm-Cortex-M4-Base.git`
+`git clone https://github.com/infohoschie/arm-cortex-m0-cmake.git`
 
-Erstellen des Build:
- - Mittels CMake Presets:
-   ```cmake --preset arm-cortex-m0```
- - Klassisch:
-   ```cmake -B build -S . -DCMAKE_BUILD_TYPE=Debug -DCMAKE_TOOLCHAIN_FILE=toolchain.cmake```
+Erstellen des Build Mittels CMake Presets:
+```cmake --preset arm-cortex-m0-unix```
+oder
+```cmake --preset arm-cortex-m0-mingw```
 
-Bauen:
- - Mittels CMake Presets:
-  ```cmake --build --preset arm-cortex-m0```
- - Klassisch:
-   ```cmake --build build```
+Bauen Mittels CMake Presets:
+```cmake --build --preset arm-cortex-m0```
+oder
+```cmake --build --preset arm-cortex-m0-mingw```
 
 ## IDEs
 ### Jetbrains CLion
