@@ -23,6 +23,7 @@
       "generator": "Unix Makefiles"
     },
     {
+      "inherits": ["arm-cortex-m0-base"],
       "name": "arm-cortex-m0-mingw",
       "displayName": "GCC Arm EABI (MinGW Makefiles)",
       "description": "GCC Arm EABI (MinGW Makefiles)",
