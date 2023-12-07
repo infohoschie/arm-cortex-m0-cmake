@@ -3,7 +3,7 @@
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
 #
 # Sven Reis
-# Thomas Vogt, thomas@thomas-vogt.de
+# Thomas Vogt
 
 set( CMAKE_SYSTEM_NAME Generic )
 set( CMAKE_SYSTEM_PROCESSOR arm )
